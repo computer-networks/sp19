@@ -1,5 +1,5 @@
 ---
-layout: cmu
+layout: coursepage
 title: 15-441/641 Homepage
 ---
 
