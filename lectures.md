@@ -1,3 +1,9 @@
+---
+layout: coursepage
+title: 15-441/641 Homepage
+---
+
+
 | Tables   |      Are      |  Cool |
 |----------|:-------------:|------:|
 | col 1 is |  left-aligned | $1600 |
