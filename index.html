@@ -3,7 +3,8 @@ layout: coursepage
 title: 15-441/641 Homepage
 ---
 
-{% for announcement in site.announcements | reverse %}
+{% assign frontpage = site.announcements | reverse %}
+{% for announcement in frontpage %}
 <div class="alert alert-info alert-dismissable">
 	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 <table>
