@@ -1,0 +1,14 @@
+---
+layout: coursepage
+title: 15-441/641 Announcements
+---
+
+{% assign frontpage = site.announcements | reverse %}
+{% for announcement in frontpage %}
+<div class="alert alert-info">
+<table>
+  <tr><td style="padding-right: 15px;">{{ announcement.date | date: "%a, %b %d" }}</td><td><strong>{{ announcement.title }}</strong></td></tr>
+  <tr><td></td><td>{{ announcement.text }}</td></tr>
+</table>
+</div>
+{% endfor %}
