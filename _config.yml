@@ -1,1 +1,4 @@
 theme: coursepage
+
+collections:
+  - announcements

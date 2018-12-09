@@ -3,29 +3,15 @@ layout: coursepage
 title: 15-441/641 Homepage
 ---
 
-
-
+{% for announcement in site.announcements %}
 <div class="alert alert-info alert-dismissable">
 	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 <table>
-	<tr><td style="padding-right: 15px;">8/31</td><td><strong>Project 1 Checkpoint 1</strong></td></tr>
-	<tr><td></td><td>Project 1 is now available. Checkpoint 1 is due on Monday 9/11 midnight EST.</td></tr>
+  <tr><td style="padding-right: 15px;">{{ announcement.date }}</td><td><strong>{{ announcement.title }}</strong></td></tr>
+  <tr><td></td><td>{{ announcement.text }}</td></tr>
 </table>
 </div>
-<div class="alert alert-info alert-dismissable">
-	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-<table>
-	<tr><td style="padding-right: 15px;">8/27</td><td><strong>Piazza</strong></td></tr>
-	<tr><td></td><td>The course now has a Piazza page for announcements and discussion. <a href="piazza.com/cmu/fall2017/15441641">Please sign up here</a> (even if you are on the waitlist).</td></tr>
-</table>
-</div>
-<div class="alert alert-info alert-dismissable">
-	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-<table>
-	<tr><td style="padding-right: 15px;">5/5</td><td><strong>Waiting lists</strong></td></tr>
-	<tr><td></td><td>The registrar does not enforce prerequisites for graduate students, so all grad students are put on the waiting list until we can verify the prerequisites.  This process starts in mid-August.  Do not send the instructors pleading to be moved off the waiting list - it will not help your case.  Note that a long waiting list does not mean that the course is full.  Many students on the course do not meet the prerequisites or list the course as a backup.</td></tr>
-</table>
-</div>
+{% endfor %}
 
 
 <div class="panel panel-default">
