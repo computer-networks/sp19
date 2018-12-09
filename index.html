@@ -7,7 +7,7 @@ title: 15-441/641 Homepage
 <div class="alert alert-info alert-dismissable">
 	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 <table>
-  <tr><td style="padding-right: 15px;">{{ announcement.date }}</td><td><strong>{{ announcement.title }}</strong></td></tr>
+  <tr><td style="padding-right: 15px;">{{ announcement.date | date: "%a, %b %d" }}</td><td><strong>{{ announcement.title }}</strong></td></tr>
   <tr><td></td><td>{{ announcement.text }}</td></tr>
 </table>
 </div>
