@@ -1,0 +1,24 @@
+---
+layout: coursepage
+title: 15-441/641 Lectures
+---
+
+<table class="table table-hover table-striped">
+  <tr>
+    <th>Date</th>
+    <th>Instructor</th>
+    <th>Topics</th>
+    <th>Notes</th>
+    <th>Readings</th>
+  </tr>
+  {% for lecture in lectures %}
+  <tr class="lecture">
+    <td>{{ lecture.date | date: "%a, %b %d"}}</td>
+    <td>{{ lecture.lecturer }}</td>
+    <td>{{ lecture.subject }}<br />
+      [<a href="slides/{{ lecture.slides }}.pdf">pdf</a>]  </td>
+    <td></td>
+    <td>{{ lecture.readings }}</td>
+  </tr>
+  {% endfor %}
+</table>
