@@ -12,7 +12,7 @@ title: 15-441/641 Lectures
     <th>Readings</th>
   </tr>
 
-{% for lecture in lectures %}
+{% for lecture in site.lectures %}
   <tr class="lecture">
     <td>{{ lecture.date | date: "%a, %b %d"}}</td>
     <td>{{ lecture.lecturer }}</td>
