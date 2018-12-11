@@ -11,7 +11,8 @@ title: 15-441/641 Lectures
     <th>Notes</th>
     <th>Readings</th>
   </tr>
-  {% for lecture in lectures %}
+
+{% for lecture in lectures %}
   <tr class="lecture">
     <td>{{ lecture.date | date: "%a, %b %d"}}</td>
     <td>{{ lecture.lecturer }}</td>
@@ -20,5 +21,6 @@ title: 15-441/641 Lectures
     <td></td>
     <td>{{ lecture.readings }}</td>
   </tr>
-  {% endfor %}
+{% endfor %}
+
 </table>
