@@ -12,18 +12,20 @@ title: 15-441/641 Assignments
 <th>Notes</th>
 </tr>
 
+{% assign sorted = site.homework | sort: 'released' %}
 
-{% for todo in site.homework %}
+
+{% for todo in sorted %}
 
 <tr>
         <td><a href="handout/{{ todo.writeup }}">{{ todo.title }}</a></td>
         
         <td>
-        {{ todo.released }}
+        {{ todo.released | date: "%b %d" }}
 				</td>
         
         <td>
-        {{ todo.due }}
+        {{ todo.due | date: "%b %d" }}
 				</td>
 
         <td>
